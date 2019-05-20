@@ -93,10 +93,10 @@ class Geo
     {
         $description = implode(',',
             array_reverse(
-                explode(',', $this->response['address'][0]['features'][0]['properties']['description'])
+                explode(',', $this->response['result']['address'][0]['features'][0]['properties']['description'])
             )
         );
-        $title = $this->response['address'][0]['features'][0]['properties']['title'];
+        $title = $this->response['result']['address'][0]['features'][0]['properties']['title'];
         $full = $description.', '.$title;
         return $full;
     }
@@ -108,7 +108,7 @@ class Geo
      */
     public function getKind()
     {
-        return $this->response['address'][0]['features'][0]['properties']['type'];
+        return $this->response['result']['address'][0]['features'][0]['properties']['type'];
     }
 
     /**
@@ -119,7 +119,7 @@ class Geo
      */
     public function getCoordinates(bool $line=false)
     {
-        $geometry = $this->response['address'][0]['features'][0]['geometry']['geometries'];
+        $geometry = $this->response['result']['address'][0]['features'][0]['geometry']['geometries'];
         $coordinates = $geometry['coordinates'];
         $coordinates = $line ? $coordinates[0].' '.$coordinates[1] : $coordinates;
         return $coordinates;
