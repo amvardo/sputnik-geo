@@ -25,5 +25,5 @@
             "Anklaav\\Sputnik\\": "src/"
         }
     },
-    "minimum-stability": "RC"
+    "minimum-stability": "stable"
 }
