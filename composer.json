@@ -1,0 +1,23 @@
+{
+    "name": "anklaav/sputnik",
+    "description": "Library with geo services by Rostelecom.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Malozemov",
+            "email": "is.malozemov@ya.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anklaav\\Sputnik\\": "src/"
+        }
+    },
+    "minimum-stability": "RC"
+}
