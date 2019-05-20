@@ -5,10 +5,9 @@ Library with geo services by Rostelecom.
 
 ```php
 <?php
-include vendor
 use Anklaav\Sputnik;
 
-$skeleton = new Sputnik();
+$sputnik = new Sputnik();
 ```
 
 ## License
