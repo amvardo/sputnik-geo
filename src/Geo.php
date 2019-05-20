@@ -120,7 +120,7 @@ class Geo
     public function getCoordinates(bool $line=false)
     {
         $geometry = $this->response['result']['address'][0]['features'][0]['geometry']['geometries'];
-        $coordinates = $geometry['coordinates'];
+        $coordinates = $geometry[0]['coordinates'];
         $coordinates = $line ? $coordinates[0].' '.$coordinates[1] : $coordinates;
         return $coordinates;
     }
