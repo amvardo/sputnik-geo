@@ -1,17 +1,17 @@
 {
-    "name": "anklaav/sputnik",
-    "description": "Library with geo services by Rostelecom.",
+    "name": "jedsense/sputnik",
+    "description": "Geocoder service by Rostelecom.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alex Malozemov",
+            "name": "Alexandr Malozemov",
             "email": "is.malozemov@ya.ru"
         }
     ],
     "repositories": [
         {
           "type": "vcs",
-          "url": "https://github.com/anklaav/sputnik.git"
+          "url": "https://github.com/jedsense/sputnik.git"
         }
     ],
     "require": {
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Anklaav\\Sputnik\\": "src/"
+            "JedSense\\Sputnik\\": "src/"
         }
     },
     "minimum-stability": "stable"

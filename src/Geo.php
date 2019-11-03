@@ -1,6 +1,6 @@
 <?php
 
-namespace Anklaav\Sputnik;
+namespace JedSense\Sputnik;
 
 use GuzzleHttp\Client;
 
@@ -117,12 +117,11 @@ class Geo
      * @param bool $line
      * @return string
      */
-    public function getCoordinates(bool $line=false)
+    public function getCoordinates(bool $line = false)
     {
         $geometry = $this->response['result']['address'][0]['features'][0]['geometry']['geometries'];
         $coordinates = $geometry[0]['coordinates'];
         $coordinates = $line ? $coordinates[0].' '.$coordinates[1] : $coordinates;
         return $coordinates;
     }
-
 }
