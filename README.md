@@ -5,7 +5,7 @@ Library with geocoder service by Rostelecom.
 
 ```php
 <?php
-use JedSense\Sputnik;
+use Cofood\Sputnik;
 
 $sputnik = new Sputnik\Geo();
 $response = $sputnik

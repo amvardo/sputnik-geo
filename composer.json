@@ -1,5 +1,5 @@
 {
-    "name": "jedsense/sputnik",
+    "name": "cofood/sputnik",
     "description": "Geocoder service by Rostelecom.",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     "repositories": [
         {
           "type": "vcs",
-          "url": "https://github.com/jedsense/sputnik.git"
+          "url": "https://github.com/cofood/sputnik.git"
         }
     ],
     "require": {
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "JedSense\\Sputnik\\": "src/"
+            "Cofood\\Sputnik\\": "src/"
         }
     },
     "minimum-stability": "stable"
