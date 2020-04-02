@@ -1,11 +1,11 @@
 # sputnik
-Library with geocoder service by Rostelecom.
+Library with geocoding service by Rostelecom.
 
 ## Usage
 
 ```php
 <?php
-use Cofood\Sputnik;
+use Arivedo\Sputnik;
 
 $sputnik = new Sputnik\Geo();
 $response = $sputnik

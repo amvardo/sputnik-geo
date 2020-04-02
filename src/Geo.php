@@ -1,6 +1,6 @@
 <?php
 
-namespace JedSense\Sputnik;
+namespace Arivedo\Sputnik;
 
 use GuzzleHttp\Client;
 
@@ -14,7 +14,7 @@ class Geo
     protected $format;
     protected $response;
 
-    public function __construct() 
+    public function __construct()
     {
         $this->guzzle = new Client();
         $this->uri = 'http://search.maps.sputnik.ru/search/addr';
