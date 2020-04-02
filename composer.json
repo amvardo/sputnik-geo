@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cofood\\Sputnik\\": "src/"
+            "Arivedo\\Sputnik\\": "src/"
         }
     },
     "minimum-stability": "stable"
