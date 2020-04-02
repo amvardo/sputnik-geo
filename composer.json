@@ -1,5 +1,5 @@
 {
-    "name": "cofood/sputnik",
+    "name": "arivedo/sputnik",
     "description": "Geocoder service by Rostelecom.",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     "repositories": [
         {
           "type": "vcs",
-          "url": "https://github.com/cofood/sputnik.git"
+          "url": "https://github.com/arivedo/sputnik.git"
         }
     ],
     "require": {
