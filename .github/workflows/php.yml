@@ -11,9 +11,12 @@ permissions:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    strategy:
+        matrix:
+            operating-system: ['ubuntu-latest']
+            php-versions: ['7.4']
+            
+    runs-on: ${{ matrix.operating-system }}
     steps:
     - uses: actions/checkout@v3
 
